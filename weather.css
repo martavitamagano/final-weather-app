@@ -1,0 +1,8 @@
+body{
+    background-color: #535F99;
+}
+.mainPage{
+    background: rgb(157, 163, 200);
+        background: linear-gradient(0deg, rgba(157, 163, 200, 1) 39%, rgba(122, 135, 205, 1) 58%, rgba(105, 119, 192, 1) 81%, rgba(88, 100, 160, 1) 100%);
+     
+}
