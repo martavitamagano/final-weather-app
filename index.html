@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
     <link rel="stylesheet" href="weather.css" />
   </head>
@@ -10,28 +16,41 @@
     <div class="mainPage">
       <header>
         <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+          <input
+            class="search-bar"
+            type="search"
+            placeholder="Enter a city..."
+            required
+          />
+          <input class="search-button" type="submit" value="Search" />
         </form>
       </header>
       <main>
-        <div>
+        <div class="center-part">
           <h1 class="city">Porto</h1>
-          <p class="dateTime">Wednesday, 14 February, 02:02</p>
+          <p class="date-time">Wednesday, 14 February, 02:02</p>
 
-          <img class="weatherIcon" src="" alt="weather-emoji" />
+          <img class="weather-icon" src="" alt="weather-emoji" />
 
-          <h2 class="weatherTemperature">16°C</h2>
-          <p class="weatherInfo">clear sky</p>
+          <h2 class="weather-temperature">16°C</h2>
+          <p class="weather-info">clear sky</p>
         </div>
 
-        <div>
-          <div>
-            <p>Humidity 70%</p>
+        <div class="weather-extras">
+          <div class="extra-block-one">
+            <p>
+              Humidity <br />
+              <br />
+              70%
+            </p>
           </div>
 
-          <div>
-            <p>Wind 7.2 km/h</p>
+          <div class="extra-block-two">
+            <p>
+              Wind <br />
+              <br />
+              7.2 km/h
+            </p>
           </div>
         </div>
       </main>
