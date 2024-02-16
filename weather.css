@@ -15,7 +15,6 @@ body {
     box-shadow: 10px 40px 60px rgba(255, 255, 255, 0.08);
 }
 
-
 .search-bar {
 
     background-color: transparent;
@@ -30,6 +29,8 @@ body {
 
 }
 
+
+
 ::placeholder {
     color: white;
     font-family: "Urbanist",
@@ -37,6 +38,12 @@ body {
 
 
 }
+
+input.search-bar{
+  color: white;
+}
+
+
 
 .search-button {
     color: white;
@@ -73,7 +80,10 @@ body {
 }
 
 .weather-icon {
-    margin-top: 50px;
+ width: 170px;
+ margin-top: 30px;
+ 
+ 
 }
 
 .weather-temperature {
