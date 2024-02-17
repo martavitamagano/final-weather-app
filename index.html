@@ -9,8 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="weather.css" />
+    <title>Weather App</title>
   </head>
   <body>
     <div class="mainPage">
@@ -33,26 +34,32 @@
 
           <img class="weather-icon" alt="weather-emoji" />
 
-          <h2 class="weather-temperature">16°C</h2>
-          <p class="weather-info">clear sky</p>
+          <div class="weather-temperature" id="temperature">16</div>
+          <div class="weather-unit">°C</div>
+          <div class="weather-info" id="weatherInfo">clear sky</div>
         </div>
 
         <div class="weather-extras">
           <div class="extra-block-one">
-            <p>
-              Humidity <br />
-              <br />
-              70%
-            </p>
+            <div class="humidity" >
+              Humidity 
+              </div>
+              <div class="humidity-percentage" id="humidityPercentage">
+              70
+            </div> 
+            <div class="humidity-icon">%</div>
           </div>
 
           <div class="extra-block-two">
-            <p>
-              Wind <br />
-              <br />
-              7.2 km/h
-            </p>
-          </div>
+            <div class="wind">
+              Wind 
+             
+            </div>
+            <div class="wind-km" id="windKm">
+               7.2 
+            </div>
+            <div class="wind-icon" >km/h</div>
+         
         </div>
       </main>
 

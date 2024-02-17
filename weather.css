@@ -81,7 +81,7 @@ input.search-bar{
 
 .weather-icon {
  width: 170px;
- margin-top: 30px;
+ margin-top: 70px;
  
  
 }
@@ -91,12 +91,20 @@ input.search-bar{
     margin-bottom: 0;
     font-weight: 400;
     font-size: 50px;
+    margin-left: -40px;
 
+}
+.weather-unit{
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: -55px;
 }
 
 .weather-info {
-    margin-top: 1px;
+    margin-top: 20px;
     font-size: 15px;
+    
 }
 
 .weather-extras {
@@ -121,7 +129,33 @@ input.search-bar{
     padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 10px;
+    max-width: 70px;
 }
+
+.humidity, .wind{
+    margin-top: 15px;
+}
+.humidity-percentage {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.wind-km{
+      margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: -40px;
+}
+.humidity-icon {
+    margin-left: 20px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+.wind-icon{
+   margin-top: -40px;
+   margin-left: 40px;
+   margin-bottom: 20px;
+}
+
 
 footer {
     color: rgba(255, 255, 255, 0.731);
