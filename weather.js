@@ -16,8 +16,8 @@ function weatherInfo(response){
      temperatureElement.innerHTML = Math.round(temperature);
      weatherInfoElement.innerHTML = response.data.condition.description;
      humidityElement.innerHTML = response.data.temperature.humidity;
-     windElement.innerHTML = response.data.wind.speed;
      timeElement.innerHTML = formatDate(date);
+     windElement.innerHTML = response.data.wind.speed;
      iconElement.innerHTML= `<img src="${response.data.condition.icon_url}" alt="weather icon" class="weather-icon"></img>`;
 }
 
