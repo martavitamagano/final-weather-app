@@ -80,14 +80,15 @@ input.search-bar{
 }
 
 .weather-icon {
- width: 170px;
- margin-top: 70px;
+width: 170px;
+height: 170px;
+margin-top: 30px;
  
  
 }
 
 .weather-temperature {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 0;
     font-weight: 400;
     font-size: 50px;
@@ -109,7 +110,7 @@ input.search-bar{
 
 .weather-extras {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
     font-size: 17px;
     font-weight: 600;
@@ -120,7 +121,20 @@ input.search-bar{
     margin-top: 40px;
 }
 
-.extra-block-one,
+
+.extra-block-one{
+        background-color: rgba(205, 211, 236, 0.535);
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-right: 20px;
+            margin-left: 5px;
+         
+            max-width: 70px;
+            
+}
 .extra-block-two {
     background-color: rgba(205, 211, 236, 0.535);
     padding-left: 40px;
@@ -128,7 +142,9 @@ input.search-bar{
     border-radius: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-right: 10px;
+   margin-left: 20px;
+   margin-right: 5px;
+  
     max-width: 70px;
 }
 

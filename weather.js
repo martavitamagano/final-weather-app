@@ -1,21 +1,24 @@
 function weatherInfo(response){
     console.log(response);
+    let cityElement = document.querySelector("#city");
     let temperatureElement = document.querySelector("#temperature");
     let temperature = response.data.temperature.current;
-    let cityElement = document.querySelector("#city");
     let weatherInfoElement = document.querySelector("#weatherInfo");
     let humidityElement = document.querySelector("#humidityPercentage");
     let windElement = document.querySelector("#windKm");
      let timeElement = document.querySelector("#dateTime");
      let date = new Date(response.data.time * 1000);
+     let iconElement = document.querySelector("#icon");
 
-
-    cityElement.innerHTML = response.data.city;
-    timeElement.innerHTML = formatDate(date);
-    temperatureElement.innerHTML = Math.round(temperature);
-    weatherInfoElement.innerHTML = response.data.condition.description;
-    humidityElement.innerHTML = response.data.temperature.humidity;
-    windElement.innerHTML = response.data.wind.speed;
+     
+     
+     cityElement.innerHTML = response.data.city;
+     temperatureElement.innerHTML = Math.round(temperature);
+     weatherInfoElement.innerHTML = response.data.condition.description;
+     humidityElement.innerHTML = response.data.temperature.humidity;
+     windElement.innerHTML = response.data.wind.speed;
+     timeElement.innerHTML = formatDate(date);
+     iconElement.innerHTML= `<img src="${response.data.condition.icon_url}" alt="weather icon" class="weather-icon"></img>`;
 }
 
 function formatDate(date){
