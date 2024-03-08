@@ -16,15 +16,14 @@ body {
 }
 
 .search-bar {
-
+    float: left;
     background-color: transparent;
     border-style: solid;
     border-width: 1px;
     border-color: white;
     border-radius: 10px;
     padding: 3px;
-    width: 75%;
-    margin-right: 20px;
+    padding-right: 140px;
     padding-left: 15px;
 
 }
@@ -35,17 +34,19 @@ body {
     color: white;
     font-family: "Urbanist",
         sans-serif;
+        
 
 
 }
 
-input.search-bar{
-  color: white;
+input.search-bar {
+    color: white;
 }
 
 
 
 .search-button {
+    float: right;
     color: white;
     background-color: transparent;
     border-style: solid;
@@ -66,7 +67,7 @@ input.search-bar{
 }
 
 .city {
-    margin-top: 50px;
+    margin-top: 70px;
     font-size: 60px;
     font-weight: 300;
     margin-bottom: 0;
@@ -76,26 +77,28 @@ input.search-bar{
     margin-top: 3px;
     font-size: 15px;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .weather-icon {
-width: 170px;
-height: 170px;
-margin-top: 30px;
- 
- 
+    width: 170px;
+    height: 170px;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+
 }
 
 .weather-temperature {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 0;
     font-weight: 400;
     font-size: 50px;
     margin-left: -40px;
 
 }
-.weather-unit{
+
+.weather-unit {
     font-weight: 400;
     font-size: 40px;
     margin-left: 50px;
@@ -105,7 +108,7 @@ margin-top: 30px;
 .weather-info {
     margin-top: 20px;
     font-size: 15px;
-    
+
 }
 
 .weather-extras {
@@ -122,19 +125,20 @@ margin-top: 30px;
 }
 
 
-.extra-block-one{
-        background-color: rgba(205, 211, 236, 0.535);
-            padding-left: 40px;
-            padding-right: 40px;
-            border-radius: 20px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            margin-right: 20px;
-            margin-left: 5px;
-         
-            max-width: 70px;
-            
+.extra-block-one {
+    background-color: rgba(205, 211, 236, 0.535);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    margin-left: 5px;
+
+    max-width: 70px;
+
 }
+
 .extra-block-two {
     background-color: rgba(205, 211, 236, 0.535);
     padding-left: 40px;
@@ -142,34 +146,77 @@ margin-top: 30px;
     border-radius: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-   margin-left: 20px;
-   margin-right: 5px;
-  
+    margin-left: 20px;
+    margin-right: 5px;
+
     max-width: 70px;
 }
 
-.humidity, .wind{
+.humidity,
+.wind {
     margin-top: 15px;
 }
+
 .humidity-percentage {
     margin-top: 15px;
     margin-bottom: 20px;
     margin-left: -20px;
 }
-.wind-km{
-      margin-top: 15px;
+
+.wind-km {
+    margin-top: 15px;
     margin-bottom: 20px;
     margin-left: -40px;
 }
+
 .humidity-icon {
     margin-left: 20px;
     margin-top: -40px;
     margin-bottom: 20px;
 }
-.wind-icon{
-   margin-top: -40px;
-   margin-left: 40px;
-   margin-bottom: 20px;
+
+.wind-icon {
+    margin-top: -40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.weather-forecast {
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.weather-forecast-date {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.618);
+    font-size: 15px;
+    margin-top: 40px;
+    font-weight: 300;
+}
+
+.weather-forecast-icon {
+display: block;
+text-align: center;
+margin-top: 13px;
+font-size: 25px;
+
+}
+
+.weather-forecast-temperatures {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.835);
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.weather-forecast-temperature {
+    padding: 0 10px;
 }
 
 
