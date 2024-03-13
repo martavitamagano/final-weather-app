@@ -205,8 +205,8 @@ display: block;
 }
 
 .weather-forecast-icon {
-margin-left: -10px;
 width: 60px;
+margin-left: -13px;
 
 
 
@@ -240,7 +240,7 @@ font-weight: 300;
 
 footer {
     color: rgba(255, 255, 255, 0.731);
-    margin-top: 28px;
+    margin-top: 40px;
     text-align: center;
     font-weight: lighter;
 }
